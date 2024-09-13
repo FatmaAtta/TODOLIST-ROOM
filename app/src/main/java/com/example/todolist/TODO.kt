@@ -9,7 +9,7 @@ data class TODO(
     var taskName: String,
     var taskDesc: String,
     var Priority: Int,
-    var dueDate: LocalDateTime,
+    var dueDate: LocalDateTime? = null,
     var isCompleted: Boolean,
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
