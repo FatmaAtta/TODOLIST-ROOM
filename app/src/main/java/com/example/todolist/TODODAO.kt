@@ -29,4 +29,7 @@ interface TODODAO {
     @Query("SELECT * FROM TODO ORDER BY isCompleted ASC")
     fun todoCompleted(): Flow<List<TODO>>
 
+    @Query("SELECT * FROM TODO")
+    fun todoNoSort(): Flow<List<TODO>>
+
 }
