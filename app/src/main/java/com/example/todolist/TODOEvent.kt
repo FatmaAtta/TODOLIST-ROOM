@@ -12,6 +12,6 @@ sealed interface TODOEvent{
     data class SetTODOIsComp(val TODOIsComp: Boolean): TODOEvent
     data class SortTODO(val sortType: SortType): TODOEvent
     data class DeleteTODO(val TODO: TODO): TODOEvent
-    object SowDialogue: TODOEvent
+    object ShowDialogue: TODOEvent
     object HideDialogue: TODOEvent
 }
